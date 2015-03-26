@@ -9,7 +9,7 @@
 
 
 ####框架特性：<br />
->1.简单了NSMutableAttributedString及NSMutableParagraphStyle！<br />
+>1.封装并简化了NSMutableAttributedString及NSMutableParagraphStyle！<br />
 >2.添加了常用的功能：垂直对齐<br />
 >3.支持区域样式，你无需关心实现过程，只需要设置对应的值以及range即可<br />
 >4.支持代码创建，xib创建。<br />
