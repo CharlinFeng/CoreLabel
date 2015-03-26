@@ -34,120 +34,120 @@
     CoreLabelVerticalAlignmentBottom,
     
     
-  } CoreLabelVerticalAlignment;
+     } CoreLabelVerticalAlignment;
   
   
   
   
   
-  /**
-   *  垂直对齐方式
-   */
-  @property (nonatomic, assign) CoreLabelVerticalAlignment verticalAlignment;
-  
-  
-  
-  
-  /**
-   *  样式
-   */
-  @property (nonatomic,strong) NSMutableParagraphStyle *style;
-  
-  
-  
-  
-  /**
-   *  直接设置样式，不会导致界面UI变化，需要手动调用更新
-   */
-  -(void)updateLabelStyle;
-  
-  
-  
-  /**
-   *  设置颜色
-   *
-   *  @param color 颜色
-   *  @param range 范围
-   */
-  -(void)setColor:(UIColor *)color range:(NSRange)range;
-  
-  
-  
-  /**
-   *  设置字体
-   *
-   *  @param font  字体
-   *  @param range 范围
-   */
-  -(void)setFont:(UIFont *)font range:(NSRange)range;
-  
-####使用说明：<br />
-   /**
- *  代码创建
- */
--(void)code{
+      /**
+       *  垂直对齐方式
+       */
+      @property (nonatomic, assign) CoreLabelVerticalAlignment verticalAlignment;
+      
+      
+      
+      
+      /**
+       *  样式
+       */
+      @property (nonatomic,strong) NSMutableParagraphStyle *style;
+      
+      
+      
+      
+      /**
+       *  直接设置样式，不会导致界面UI变化，需要手动调用更新
+       */
+      -(void)updateLabelStyle;
+      
+      
+      
+      /**
+       *  设置颜色
+       *
+       *  @param color 颜色
+       *  @param range 范围
+       */
+      -(void)setColor:(UIColor *)color range:(NSRange)range;
+      
+      
+      
+      /**
+       *  设置字体
+       *
+       *  @param font  字体
+       *  @param range 范围
+       */
+      -(void)setFont:(UIFont *)font range:(NSRange)range;
+      
+    ####使用说明：<br />
+       /**
+     *  代码创建
+     */
+    -(void)code{
+        
+        CoreLabel *label=[[CoreLabel alloc] initWithFrame:CGRectMake(20, 20, 100, 100)];
+        
+        label.layer.borderColor=[UIColor redColor].CGColor;
+        label.layer.borderWidth=1.0f;
+        
+        label.text=@"我是文本我是文本我是文本我是文本我是文本";
+        
+        [self.view addSubview:label];
+        
+        //修改对齐
+        label.verticalAlignment=CoreLabelVerticalAlignmentBottom;
     
-    CoreLabel *label=[[CoreLabel alloc] initWithFrame:CGRectMake(20, 20, 100, 100)];
+        //设置行
+        label.numberOfLines=0;
+        
+        //设置首行缩进
+        label.style.firstLineHeadIndent=20;
+        
+        //行间距
+        label.style.lineSpacing=10;
     
-    label.layer.borderColor=[UIColor redColor].CGColor;
-    label.layer.borderWidth=1.0f;
+        //段间距
+        label.style.paragraphSpacing=20;
+        
+        //更新
+        [label updateLabelStyle];
+       }
+      
+      
+       /**
+       *  从xib创建
+       */
+       -(void)xibCoreLabel{
+        
+        //修改对齐
+        _label2.verticalAlignment=CoreLabelVerticalAlignmentBottom;
+        
+        //间距
+        _label2.style.lineSpacing=20;
+        
+        //更新
+        [_label2 updateLabelStyle];
+        
+       }
     
-    label.text=@"我是文本我是文本我是文本我是文本我是文本";
-    
-    [self.view addSubview:label];
-    
-    //修改对齐
-    label.verticalAlignment=CoreLabelVerticalAlignmentBottom;
-
-    //设置行
-    label.numberOfLines=0;
-    
-    //设置首行缩进
-    label.style.firstLineHeadIndent=20;
-    
-    //行间距
-    label.style.lineSpacing=10;
-
-    //段间距
-    label.style.paragraphSpacing=20;
-    
-    //更新
-    [label updateLabelStyle];
-   }
-  
-  
-   /**
-   *  从xib创建
-   */
-   -(void)xibCoreLabel{
-    
-    //修改对齐
-    _label2.verticalAlignment=CoreLabelVerticalAlignmentBottom;
-    
-    //间距
-    _label2.style.lineSpacing=20;
-    
-    //更新
-    [_label2 updateLabelStyle];
-    
-   }
-
-  /**
-   *  颜色处理
-   */
--(void)colorHandle{
-    
-    [_label3 setColor:[UIColor redColor] range:NSMakeRange(3, 3)];
-    
-    [_label3 setFont:[UIFont boldSystemFontOfSize:20] range:NSMakeRange(0, 3)];
-    
- 
-   }
+      /**
+       *  颜色处理
+       */
+    -(void)colorHandle{
+        
+        [_label3 setColor:[UIColor redColor] range:NSMakeRange(3, 3)];
+        
+        [_label3 setFont:[UIFont boldSystemFontOfSize:20] range:NSMakeRange(0, 3)];
+        
+     
+       }
 
 
 
 #效果图：
-![image](./PhotoPicker/pic/1.jpg)
+![image](./CoreLabel/pic/1.jpg)
 
 
 <br /><br /><br /><br />
