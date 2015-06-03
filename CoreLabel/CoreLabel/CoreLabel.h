@@ -10,70 +10,89 @@
 
 @interface CoreLabel : UILabel
 
+#define degree(d) (M_PI * d / 180.0f)
+
+
+
+
+/** 对齐方式 */
 typedef enum VerticalAlignment {
     
-    /**
-     *  顶部对齐
-     */
+    /** 顶部对齐 */
     CoreLabelVerticalAlignmentTop=0,
     
-    /**
-     *  垂直居中
-     */
+    /** 垂直居中 */
     CoreLabelVerticalAlignmentMiddle,
     
-    /**
-     *  底部对齐
-     */
+    /** 底部对齐 */
     CoreLabelVerticalAlignmentBottom,
-    
     
 } CoreLabelVerticalAlignment;
 
 
+/** 属性 */
+typedef enum{
+    
+    //颜色
+    CoreLabelAttrColor=0,
+    
+    //字体
+    CoreLabelAttrFont,
+    
+    //斜体
+    CoreLabelAttrObliqueness,
+    
+    //字间距
+    CoreLabelAttrKern,
+    
+    //删除线
+    CoreLabelAttrDeleteLine,
+    
+    //下划线
+    CoreLabelAttrUnderLine,
 
+} CoreLabelAttr;
+
+
+/** 垂直对齐方式 */
+@property (nonatomic, assign) CoreLabelVerticalAlignment cl_verticalAlignment;
+
+/** 首行缩进 */
+@property (nonatomic,assign) CGFloat cl_firstLineHeadIndent;
+
+/** 行间距 */
+@property (nonatomic,assign) CGFloat cl_lineSpacing;
+
+/** 段落之前的间距 */
+@property (nonatomic,assign) CGFloat cl_paragraphSpacing;
 
 
 /**
- *  垂直对齐方式
+ *  添加属性
+ *
+ *  @param attr  属性类型
+ *  @param value 属性值值
+ *  @param range range
  */
-@property (nonatomic, assign) CoreLabelVerticalAlignment verticalAlignment;
+-(void)addAttr:(CoreLabelAttr)attr value:(id)value range:(NSRange)range;
+
+
+-(void)addImage:(UIImage *)image size:(CGSize)size offset:(UIOffset)offset location:(NSUInteger)location;
 
 
 
 
-/**
- *  样式
- */
-@property (nonatomic,strong) NSMutableParagraphStyle *style;
 
 
 
 
-/**
- *  直接设置样式，不会导致界面UI变化，需要手动调用更新
- */
+
+/** 直接设置样式，不会导致界面UI变化，需要手动调用更新 */
 -(void)updateLabelStyle;
 
 
 
-/**
- *  设置颜色
- *
- *  @param color 颜色
- *  @param range 范围
- */
--(void)setColor:(UIColor *)color range:(NSRange)range;
 
-
-
-/**
- *  设置字体
- *
- *  @param font  字体
- *  @param range 范围
- */
--(void)setFont:(UIFont *)font range:(NSRange)range;
 
 
 

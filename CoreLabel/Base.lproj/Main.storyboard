@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,41 +16,8 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="law-S9-eGF" customClass="CoreLabel">
-                                <rect key="frame" x="290" y="290" width="300" height="300"/>
-                                <color key="backgroundColor" red="0.73419510690789469" green="0.73992598684210531" blue="0.73565995065789458" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="5Jd-yV-rDK"/>
-                                    <constraint firstAttribute="height" constant="300" id="Osl-X3-YEl"/>
-                                </constraints>
-                                <mutableString key="text">我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建\n我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建我从xib创建</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="题目：我是一个单行文本" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYg-Wu-pHf" customClass="CoreLabel">
-                                <rect key="frame" x="390" y="249" width="200" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="aM0-L3-5z8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="law-S9-eGF" firstAttribute="top" secondItem="MYg-Wu-pHf" secondAttribute="bottom" constant="20" id="9dC-ij-JNI"/>
-                            <constraint firstAttribute="trailing" secondItem="MYg-Wu-pHf" secondAttribute="trailing" constant="10" id="owl-0r-tvr"/>
-                            <constraint firstAttribute="trailing" secondItem="law-S9-eGF" secondAttribute="trailing" constant="10" id="pp1-eQ-a0j"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="law-S9-eGF" secondAttribute="bottom" constant="10" id="x18-5r-xUC"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="label2" destination="law-S9-eGF" id="6bU-Gb-xsu"/>
-                        <outlet property="label3" destination="MYg-Wu-pHf" id="X9G-mw-mP2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
