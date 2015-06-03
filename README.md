@@ -3,7 +3,7 @@
     Charlin出框架的目标：简单、易用、高度封装、绝对解耦！
 
 #CoreLabel
-####为图文混排而设计，超轻量级的Label。
+####为图文混排而设计，超轻量级的Label，轻度使用下是TTTLabel的最佳替换选择。
 
 
 <br /><br /><br />
@@ -87,7 +87,7 @@ Charlin（成都）更多原创项目（涵盖了方方面面，看看还有没�
 <br /><br /><br /><br />
 
 -----
-    CoreLabel 为图文混排而设计，超轻量级的Label。
+    CoreLabel 为图文混排而设计，超轻量级的Label，轻度使用下是TTTLabel的最佳替换选择。
 -----
 
 <br /><br />
