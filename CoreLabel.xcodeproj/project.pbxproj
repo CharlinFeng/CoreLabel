@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		89409C971B1EA06E00064729 /* CoreLabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89409C961B1EA06E00064729 /* CoreLabelModel.m */; };
+		89409C991B1EAAEA00064729 /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 89409C981B1EAAEA00064729 /* label.png */; };
 		EE5FDB9F1AC3E763006A1B08 /* CoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5FDB9E1AC3E763006A1B08 /* CoreLabel.m */; };
-		EE5FDBA41AC3FF7A006A1B08 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE5FDBA31AC3FF7A006A1B08 /* 1.jpg */; };
 		EECBD5FC1AC3D56000F5A7E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBD5FB1AC3D56000F5A7E0 /* main.m */; };
 		EECBD5FF1AC3D56000F5A7E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBD5FE1AC3D56000F5A7E0 /* AppDelegate.m */; };
 		EECBD6021AC3D56000F5A7E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBD6011AC3D56000F5A7E0 /* ViewController.m */; };
@@ -32,9 +32,9 @@
 /* Begin PBXFileReference section */
 		89409C951B1EA06E00064729 /* CoreLabelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLabelModel.h; sourceTree = "<group>"; };
 		89409C961B1EA06E00064729 /* CoreLabelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLabelModel.m; sourceTree = "<group>"; };
+		89409C981B1EAAEA00064729 /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = label.png; path = ../label.png; sourceTree = "<group>"; };
 		EE5FDB9D1AC3E763006A1B08 /* CoreLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLabel.h; sourceTree = "<group>"; };
 		EE5FDB9E1AC3E763006A1B08 /* CoreLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLabel.m; sourceTree = "<group>"; };
-		EE5FDBA31AC3FF7A006A1B08 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		EECBD5F61AC3D56000F5A7E0 /* CoreLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECBD5FA1AC3D56000F5A7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EECBD5FB1AC3D56000F5A7E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		EE5FDBA21AC3FF7A006A1B08 /* pic */ = {
 			isa = PBXGroup;
 			children = (
-				EE5FDBA31AC3FF7A006A1B08 /* 1.jpg */,
+				89409C981B1EAAEA00064729 /* label.png */,
 			);
 			path = pic;
 			sourceTree = "<group>";
@@ -236,8 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89409C991B1EAAEA00064729 /* label.png in Resources */,
 				EECBD6051AC3D56000F5A7E0 /* Main.storyboard in Resources */,
-				EE5FDBA41AC3FF7A006A1B08 /* 1.jpg in Resources */,
 				EECBD60A1AC3D56000F5A7E0 /* LaunchScreen.xib in Resources */,
 				EECBD6071AC3D56000F5A7E0 /* Images.xcassets in Resources */,
 			);

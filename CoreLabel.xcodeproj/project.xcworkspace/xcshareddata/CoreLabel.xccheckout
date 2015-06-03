@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CD45C47E-8657-449C-89E3-648F5CFAB37A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>CoreLabel</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0F25C878603C7964680A432B94CFDD0FF25BA673</key>
 		<string>https://github.com/nsdictionary/CoreLabel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CoreLabel.xcodeproj/project.xcworkspace</string>
+	<string>CoreLabel.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0F25C878603C7964680A432B94CFDD0FF25BA673</key>

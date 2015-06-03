@@ -29,12 +29,12 @@
  */
 -(void)code{
     
-    CoreLabel *label=[[CoreLabel alloc] initWithFrame:CGRectMake(0, 20, 320, 200)];
+    CoreLabel *label=[[CoreLabel alloc] initWithFrame:CGRectMake(0, 20, 320, 300)];
     
     label.layer.borderColor=[UIColor lightGrayColor].CGColor;
     label.layer.borderWidth=1.0f;
     
-    label.text=@"我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本";
+    label.text=@"我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本我是文本";
     
     [self.view addSubview:label];
     
