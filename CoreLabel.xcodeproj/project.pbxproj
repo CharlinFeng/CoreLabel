@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		89409C951B1EA06E00064729 /* CoreLabelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLabelModel.h; sourceTree = "<group>"; };
 		89409C961B1EA06E00064729 /* CoreLabelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLabelModel.m; sourceTree = "<group>"; };
-		89409C981B1EAAEA00064729 /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = label.png; path = ../label.png; sourceTree = "<group>"; };
+		89409C981B1EAAEA00064729 /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label.png; sourceTree = "<group>"; };
 		EE5FDB9D1AC3E763006A1B08 /* CoreLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLabel.h; sourceTree = "<group>"; };
 		EE5FDB9E1AC3E763006A1B08 /* CoreLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLabel.m; sourceTree = "<group>"; };
 		EECBD5F61AC3D56000F5A7E0 /* CoreLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +90,6 @@
 		EE5FDBA21AC3FF7A006A1B08 /* pic */ = {
 			isa = PBXGroup;
 			children = (
-				89409C981B1EAAEA00064729 /* label.png */,
 			);
 			path = pic;
 			sourceTree = "<group>";
@@ -132,6 +131,7 @@
 		EECBD5F91AC3D56000F5A7E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89409C981B1EAAEA00064729 /* label.png */,
 				EE5FDBA21AC3FF7A006A1B08 /* pic */,
 				EECBD5FA1AC3D56000F5A7E0 /* Info.plist */,
 				EECBD5FB1AC3D56000F5A7E0 /* main.m */,
