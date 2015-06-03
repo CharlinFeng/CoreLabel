@@ -16,10 +16,9 @@ Charlin（成都）更多原创项目（涵盖了方方面面，看看还有没�
 <br /><br /><br />
 
 #效果图：
-![image](./CoreLabel/pic/label.png)
+![image](./CoreLabel/label.png)
 
 <br /><br />
-
 
 ####框架特性：<br />
 >1.封装并简化了NSMutableAttributedString及NSMutableParagraphStyle！<br />
