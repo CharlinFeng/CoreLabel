@@ -29,7 +29,7 @@
  */
 -(void)code{
     
-    CoreLabel *label=[[CoreLabel alloc] initWithFrame:CGRectMake(0, 20, 320, 300)];
+    CoreLabel *label=[[CoreLabel alloc] initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 300)];
     
     label.layer.borderColor=[UIColor lightGrayColor].CGColor;
     label.layer.borderWidth=1.0f;
