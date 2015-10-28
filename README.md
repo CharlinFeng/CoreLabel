@@ -1,7 +1,4 @@
-
-
-    Charlin出框架的目标：简单、易用、高度封装、绝对解耦！
-
+<br /><br /><br />
 #CoreLabel （请关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ####为图文混排而设计，超轻量级的Label，轻度使用下是TTTLabel的最佳替换选择。
 
