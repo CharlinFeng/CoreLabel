@@ -1,6 +1,7 @@
-<br /><br /><br />
+<br /><br />
 #CoreLabel （请关注[信息公告牌](https://github.com/CharlinFeng/Show)）
-####为图文混排而设计，超轻量级的Label，轻度使用下是TTTLabel的最佳替换选择。
+<br />
+###为图文混排而设计，超轻量级的Label，轻度使用下是TTTLabel的最佳替换择。
 
 <br /><br />
 
@@ -74,5 +75,4 @@
         //更新
         [label updateLabelStyle];
 
-<br /><br /><br /><br />
-
+<br />
