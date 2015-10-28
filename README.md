@@ -2,32 +2,11 @@
 
     Charlin出框架的目标：简单、易用、高度封装、绝对解耦！
 
-#CoreLabel
+#CoreLabel （请关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ####为图文混排而设计，超轻量级的Label，轻度使用下是TTTLabel的最佳替换选择。
 
 <br /><br />
 
-组织信息 Charlin Feng：
-===============
-<br />
-#### 特别群：请西部省市朋友实名加入组织。其他地区朋友请添加2-4群：谢谢。
-<br />
-【西部区域】西部大开发群号： 473185026  -追赶北上广！为振兴西部IT而努力！<br />
-热烈欢迎中国西部各省市的从事iOS开发朋友实名进群！本群为是聚集西部零散开发者，大家齐心协力共进退！ <br /><br />
-
-【全国可加】四群： 347446259<br />
-新开，可加！欢迎全国朋友加入组织 <br /><br />
-
-【全国可加】三群： 474377358<br />
-新开，可加！欢迎全国朋友加入组织 <br /><br />
-
-【全国可加】二群： 369870753<br />
-可加<br /><br />
-
-【全国可加】一群：163865401<br />
-已爆满，加不上了<br /><br />
-
-<br /><br />
 #效果图：
 ![image](./CoreLabel/label.png)
 
@@ -94,27 +73,9 @@
         [label addImage:[UIImage imageNamed:@"d_chanzui"] size:CGSizeMake(0, 0) offset:UIOffsetMake(0, -3) location:12];
 
 <br />
-######  更新样式，请最后再调用
+######  更新样式，请最后一定要调用，否则你会看不到效果
         //更新
         [label updateLabelStyle];
 
 <br /><br /><br /><br />
 
------
-    CoreLabel 为图文混排而设计，超轻量级的Label，轻度使用下是TTTLabel的最佳替换选择。
------
-
-<br /><br />
-
-#### 版权说明 RIGHTS <br />
-作品说明：本框架由iOS开发攻城狮Charlin制作。<br />
-作品时间： 2015.03.26 17:00<br />
-更新时间： 2015.06.3 17:00<br />
-
-#### 关于Chariln INTRODUCE <br />
-作者简介：Charlin-四川成都华西都市报旗下华西都市网络有限公司技术部iOS工程师！<br /><br />
-
-
-#### 联系方式 CONTACT <br />
-Q    Q：1761904945（请注明缘由）<br />
-Mail：1761904945@qq.com<br />
