@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoreLabel : UILabel
 
 #define degree(d) (M_PI * d / 180.0f)
 
@@ -19,7 +18,7 @@
 typedef enum VerticalAlignment {
     
     /** 顶部对齐 */
-    CoreLabelVerticalAlignmentTop=0,
+    CoreLabelVerticalAlignmentTop = 0,
     
     /** 垂直居中 */
     CoreLabelVerticalAlignmentMiddle,
@@ -34,7 +33,7 @@ typedef enum VerticalAlignment {
 typedef enum{
     
     //颜色
-    CoreLabelAttrColor=0,
+    CoreLabelAttrColor = 0,
     
     //字体
     CoreLabelAttrFont,
@@ -50,8 +49,15 @@ typedef enum{
     
     //下划线
     CoreLabelAttrUnderLine,
-
+    
 } CoreLabelAttr;
+
+
+
+
+
+@interface CoreLabel : UILabel
+
 
 
 /** 垂直对齐方式 */
