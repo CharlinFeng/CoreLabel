@@ -69,6 +69,9 @@ typedef enum{
 /** 行间距 */
 @property (nonatomic,assign) CGFloat cl_lineSpacing;
 
+/** 对齐 */
+@property (nonatomic,assign) NSTextAlignment cl_alignment;
+
 /** 段落之前的间距 */
 @property (nonatomic,assign) CGFloat cl_paragraphSpacing;
 

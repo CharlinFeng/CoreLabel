@@ -163,7 +163,7 @@
  *  直接设置样式，不会导致界面UI变化，需要手动调用更新
  */
 -(void)updateLabelStyle{
-
+    
     if(self.attrStringM==nil) return;
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -207,6 +207,9 @@
     self.style.lineSpacing = cl_lineSpacing;
 }
 
+
+
+
 /** 段落之前的间距 */
 -(void)setCl_paragraphSpacing:(CGFloat)cl_paragraphSpacing{
     
@@ -215,7 +218,12 @@
     self.style.paragraphSpacing = cl_paragraphSpacing;
 }
 
-
+-(void)setCl_alignment:(NSTextAlignment)cl_alignment {
+    
+    _cl_alignment = cl_alignment;
+    
+    self.style.alignment = cl_alignment;
+}
 
 
 
@@ -252,7 +260,7 @@
         case CoreLabelAttrUnderLine: //下划线
             [self setUnderLineWithColor:value range:range];
             break;
-
+            
         default:
             break;
     }
@@ -270,7 +278,7 @@
     
     //设置大小
     attachment.bounds =(CGRect){CGPointMake(offset.horizontal, offset.vertical),size};
-
+    
     CoreLabelModel *labelModel = [CoreLabelModel labelModelWithAttachment:attachment index:location];
     
     [self.attatchmentsM addObject:labelModel];
