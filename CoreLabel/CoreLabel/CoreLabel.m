@@ -166,8 +166,8 @@
     
     if(self.attrStringM==nil) return;
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
+//    dispatch_async(dispatch_get_main_queue(), ^{
+    
         [self.attrStringM addAttribute:NSParagraphStyleAttributeName value:self.style range:NSMakeRange(0, self.attrStringM.length)];
         
         //添加图片附件
@@ -186,7 +186,7 @@
         }
         
         self.attributedText=self.attrStringM;
-    });
+//    });
 }
 
 
@@ -332,10 +332,10 @@
 
 -(void)addAttrWithName:(NSString *)name value:(id)value range:(NSRange)range{
     
-    dispatch_async(dispatch_get_main_queue(), ^{
+//    dispatch_async(dispatch_get_main_queue(), ^{
         [self.attrStringM addAttribute:name value:value range:range];
         self.attributedText=self.attrStringM;
-    });
+//    });
 }
 
 
